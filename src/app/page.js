@@ -202,7 +202,7 @@ export default function Home() {
                         <i className="bi bi-person-circle text-xl"></i>
                         <span className="text-xs font-bold mt-1">Perfil</span>
                     </div>
-                  </nav>
+                      </nav>
             
                   <ConfirmationModal
                     isOpen={showResetConfirmation}
@@ -212,6 +212,3 @@ export default function Home() {
                     onCancel={handleResetCancel}
                   />
                 </div>
-              );
-            }  );
-}
