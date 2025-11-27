@@ -21,6 +21,7 @@ export const course = {
               ]
             }
           ],
+        },
 
         {
           id: 'unit-2',
