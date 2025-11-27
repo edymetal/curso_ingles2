@@ -19,18 +19,7 @@ export const course = {
                 { type: 'translation', portuguese: 'Ele come pão', english: 'He eats bread', options: ['He', 'eats', 'bread'] },
                 { type: 'repetition', phrase: 'My name is' }
               ]
-            },
-            {
-              id: 'lesson-1-2',
-              type: 'speaking',
-              exercises: [
-                { type: 'repetition', phrase: 'Hello, my name is John' },
-                { type: 'translation', portuguese: 'Ela é uma menina', english: 'She is a girl', options: ['She', 'is', 'a', 'girl'] },
-                { type: 'pair-match', pairs: [{ english: 'Car', portuguese: 'Carro' }, { english: 'House', portuguese: 'Casa' }, { english: 'Tree', portuguese: 'Árvore' }, { english: 'Book', portuguese: 'Livro' }] },
-                { type: 'image-select', word: 'the girl', options: ['boy.png', 'girl.png'], correctOption: 'girl.png' },
-                { type: 'repetition', phrase: 'How are you?' }
-              ]
-            }
+
           ]
         },
         {
