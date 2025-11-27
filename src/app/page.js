@@ -204,11 +204,3 @@ export default function Home() {
                     </div>
                       </nav>
             
-                  <ConfirmationModal
-                    isOpen={showResetConfirmation}
-                    title="Resetar Progresso"
-                    message="Deseja realmente apagar seu progresso e começar do zero? Esta ação é irreversível!"
-                    onConfirm={handleResetConfirm}
-                    onCancel={handleResetCancel}
-                  />
-                </div>
