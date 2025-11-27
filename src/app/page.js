@@ -58,7 +58,7 @@ export default function Home() {
             </div>
             {/* Botão de Resetar Progresso Total */}
             <button 
-              onClick={() => { if(confirm('Tem certeza que deseja resetar todo o seu progresso?')) resetLearningProgress(); }} 
+              onClick={() => { if(confirm('Deseja realmente apagar seu progresso e começar do zero? Esta ação é irreversível!')) resetLearningProgress(); }} 
               className="px-3 py-1 bg-red-500 text-white rounded-full text-xs font-bold hover:bg-red-600 transition-colors"
               title="Resetar todo o progresso (XP, Ofensiva, Lições Concluídas)"
             >
