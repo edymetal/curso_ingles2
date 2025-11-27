@@ -19,8 +19,7 @@ export const course = {
                 { type: 'translation', portuguese: 'Ele come pão', english: 'He eats bread', options: ['He', 'eats', 'bread'] },
                 { type: 'repetition', phrase: 'My name is' }
               ]
-
-          ]
+            }
         },
         {
           id: 'unit-2',
