@@ -17,9 +17,6 @@ export const useLearningStore = create(
         return { completedNodes: [...state.completedNodes, nodeId] };
       }),
       resetLearningProgress: () => set({ xp: 0, streak: 0, completedNodes: [] }),
-      resetCurrentLesson: (lessonId) => set((state) => ({
-        completedNodes: state.completedNodes.filter(id => id !== lessonId)
-      })),
     }),
     {
       name: 'learning-storage', // unique name for localStorage key

@@ -15,7 +15,7 @@ export default function LessonPage() {
   const params = useParams();
   const router = useRouter();
   const { lessonId } = params;
-  const { xp, addXp, decreaseXp, markNodeCompleted, resetLearningProgress, resetCurrentLesson } = useLearningStore();
+  const { xp, addXp, decreaseXp, markNodeCompleted, resetLearningProgress } = useLearningStore();
 
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const [isCompleted, setIsCompleted] = useState(false);
@@ -57,12 +57,7 @@ export default function LessonPage() {
     }
   };
 
-  const handleResetLesson = () => {
-    resetCurrentLesson(lessonId); // Remove current lesson from completed nodes
-    setIsCompleted(false); // Allow re-doing the lesson
-    setCurrentExerciseIndex(0); // Start from the first exercise
-    setErrorMessage(null); // Clear any error messages
-  };
+
   
   if (!lesson) return <div className="p-8 text-center">Loading lesson...</div>;
 
@@ -74,9 +69,7 @@ export default function LessonPage() {
          <button onClick={() => router.push('/')} className="px-8 py-4 bg-white text-yellow-500 rounded-full font-bold text-xl shadow-lg mb-4">
            Continuar
          </button>
-         <button onClick={handleResetLesson} className="px-8 py-4 bg-white text-yellow-500 rounded-full font-bold text-xl shadow-lg mb-4">
-           Refazer Lição
-         </button>
+
          <button onClick={() => { resetLearningProgress(); router.push('/'); }} className="px-8 py-4 bg-white text-yellow-500 rounded-full font-bold text-xl shadow-lg">
            Resetar Progresso Total
          </button>
@@ -103,13 +96,7 @@ export default function LessonPage() {
           <i className="bi bi-lightning-fill"></i> {xp}
         </div>
         {/* Novo botão de reset para a lição atual */}
-        <button 
-          onClick={handleResetLesson} 
-          className="ml-4 px-4 py-2 bg-red-500 text-white rounded-full text-sm hover:bg-red-600 transition-colors"
-        >
-          Resetar Lição
-        </button>
-      </header>
+              </header>
 
       {/* Exercise Content */}
       <main className="flex-grow flex flex-col items-center justify-center p-4 w-full">
