@@ -203,4 +203,7 @@ export default function Home() {
                         <span className="text-xs font-bold mt-1">Perfil</span>
                     </div>
                       </nav>
+    </div>
+  );
+}
             
