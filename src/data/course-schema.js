@@ -20,7 +20,8 @@ export const course = {
                 { type: 'repetition', phrase: 'My name is' }
               ]
             }
-        },
+          ],
+
         {
           id: 'unit-2',
           title: 'Unidade 2: Falar sobre viagens',
